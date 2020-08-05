@@ -1,0 +1,90 @@
+{
+	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+		{
+			"path": "pages/index/index",
+			"style": {
+				"navigationBarTitleText": "逸尘影视",
+				"app-plus" : {
+                    "titleNView" : false //禁用原生导航栏
+                },
+				"enablePullDownRefresh":true
+			}
+		}
+	    ,{
+            "path" : "pages/search/search",
+			"navigationBarTitleText": "搜索",
+            "style" : {
+				"navigationBarTitleText": "搜索"
+			}
+        }
+        ,{
+            "path" : "pages/me/me",
+            "style" : {
+				"navigationBarTitleText": "个人中心",
+				"navigationBarTextStyle": "white",
+				"navigationBarBackgroundColor": "#ffd655",
+				"backgroundColor": "#ffd655",
+				"app-plus" : {
+                    "titleNView" : false //禁用原生导航栏
+                }
+			}
+        }
+        ,{
+            "path" : "pages/movie/movie",
+            "style" : {
+				"app-plus" : {
+				    "titleNView" : { //禁用原生导航栏
+						"type":"transparent"
+					} 
+				}
+			}
+        }
+        ,{
+            "path" : "pages/cover/cover",
+            "style" : {}
+        }
+        ,{
+            "path" : "pages/registLogin/registLogin",
+            "style" : {}
+        }
+        ,{
+            "path" : "pages/meInfo/meInfo",
+            "style" : {}
+        }
+        ,{
+            "path" : "pages/meFace/meFace",
+            "style" : {}
+        }
+    ],
+	"globalStyle": {
+		"navigationBarTextStyle": "black",
+		"navigationBarTitleText": "逸尘影视",
+		"navigationBarBackgroundColor": "#F8F8F8",
+		"backgroundColor": "#F8F8F8"
+	},
+	"tabBar":{
+		"color":"#bfbfbf",
+		"selectedColor":"#515151",
+		"borderStyle": "black",
+        "backgroundColor": "#ffffff",
+		"list": [{
+            "pagePath": "pages/index/index",
+            "iconPath": "static/tabBarIco/index.png",
+            "selectedIconPath": "static/tabBarIco/index_sel.png",
+            "text": "首页"
+        }, {
+            "pagePath": "pages/search/search",
+            "iconPath": "static/tabBarIco/search.png",
+            "selectedIconPath": "static/tabBarIco/search_sel.png",
+            "text": "搜索"
+        }, {
+            "pagePath": "pages/me/me",
+            "iconPath": "static/tabBarIco/me.png",
+            "selectedIconPath": "static/tabBarIco/me_sel.png",
+            "text": "个人中心"
+        }
+		]
+		
+		
+	}
+}
